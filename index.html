@@ -177,12 +177,13 @@
   </footer>
 
   <!--Import jQuery before materialize.js-->
-  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script> 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js" type="text/javascript"></script> 
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js" type="text/javascript"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.95.3/js/materialize.min.js" type="text/javascript"></script>
   <script src="scripts.js" type="text/javascript"></script>
   <script>
-    var currentYear = 2015;
-    var currentMonth = 3;
+    var today = new Date();
+    var currentYear = today.getFullYear();
+    var currentMonth = today.getMonth()+1;
     var i = 0;
     var marginTopBeforeAnimation = 0;
 
