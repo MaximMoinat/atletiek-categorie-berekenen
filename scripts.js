@@ -78,20 +78,17 @@ function calculateCategory(birthYear, birthMonth, seasonYear) {
     var category = "niet gevonden";
 
     if (ageYears >= 35) {
-        category = "masters";
-    } else if (ageYears < 35 && ageYears >= 20) {
+        var masterAgeGroup = Math.floor(ageYears/5)*5
+        category = "Masters " + masterAgeGroup + "+";
+    } else if (ageYears >= 20 && ageYears < 35) {
         category = "Senioren";
     } else if (ageYears < 20) {
         switch (ageYears) {
             case 4:
-                category = "Klatjes";
-                break;
             case 5:
                 category = "Klatjes";
                 break;
             case 6:
-                category = "Mini pupillen";
-                break;
             case 7:
                 category = "Mini pupillen";
                 break;
@@ -102,32 +99,22 @@ function calculateCategory(birthYear, birthMonth, seasonYear) {
                 category = "B-pupillen";
                 break;
             case 10:
-                category = "A-pupillen";
-                break;
             case 11:
                 category = "A-pupillen";
                 break;
             case 12:
-                category = "D-junioren";
-                break;
             case 13:
                 category = "D-junioren";
                 break;
             case 14:
-                category = "C-junioren";
-                break;
             case 15:
                 category = "C-junioren";
                 break;
             case 16:
-                category = "B-junioren";
-                break;
             case 17:
                 category = "B-junioren";
                 break;
             case 18:
-                category = "A-junioren";
-                break;
             case 19:
                 category = "A-junioren";
                 break;
